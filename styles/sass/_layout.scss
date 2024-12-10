@@ -1,0 +1,8 @@
+body { 
+    font: 19px / 23px Arial, sans-serif;
+    color: $white;
+    background-color: $tertiary; /* Couleur de fond blanc bleuâtre */ /* background-color: #1a1a2e */;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+}
