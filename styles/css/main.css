@@ -1,0 +1,155 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: #fff;
+  background-color: #e0f7fa; /* Couleur de fond blanc bleuâtre */ /* background-color: #1a1a2e */
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+}
+
+header {
+  background-color: #162447;
+  padding: 10px 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  gap: 20px;
+  padding-top: 40px;
+}
+
+section {
+  background-color: #1f4068;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+section h1, section h2 {
+  color: #e43f5a;
+}
+
+section p, form {
+  margin-top: 20px;
+}
+
+form label {
+  display: block;
+  margin: 10px 0 5px;
+}
+
+form input, form textarea, form button {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 4px;
+  border: none;
+}
+
+form button {
+  background-color: #e43f5a;
+  color: #fff;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #e43f5a;
+}
+
+#experiences {
+  text-align: center;
+  padding: 20px;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.card {
+  background-color: #1f4068;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+.card h2 {
+  color: #e43f5a;
+}
+
+.card p {
+  margin-top: 10px;
+  line-height: 1.6;
+}
+
+.card ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.card ul li {
+  padding: 10px;
+  margin: 10px 0;
+  background-color: #e43f5a;
+  border-radius: 4px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.card ul li:hover {
+  background-color: #e43f5a;
+  color: #fff;
+  transform: translateX(10px);
+  cursor: pointer;
+}
+
+footer {
+  text-align: center;
+  padding: 20px 0;
+  background-color: #162447;
+  color: #fff;
+}
+
+@media (max-width: 600px) {
+  main {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    padding-top: 60px;
+  }
+}/*# sourceMappingURL=main.css.map */
