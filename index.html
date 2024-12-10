@@ -5,25 +5,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio EWOMBA-JOCKTANE</title>
     <link rel="stylesheet" href="styles/css/main.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
      <!-- Lien vers FontAwesome pour les icônes -->
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#accueil">Accueil</a></li>
-                <li><a href="#apropos">À propos</a></li>
-                <li><a href="#competences">Mes Compétences</a></li>
-                <li><a href="#projets">Mes Projets</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+    <header class="container-fluid py-1 mb-4 border-bottom px-2"> 
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid ">
+                    <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-decoration-none">
+                        <img src="assets/logo/logo-Ewomba.png" alt="logo-Ewomba"  width="40" height="32" />
+                        <span class="fs-4 px-3">OzO</span></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                    <ul class="navbar-nav nav-underline mb-2 mb-lg-0 ">
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="#accueil">Accueil</a></li>
+                        <li class="nav-item"><a href="#apropos" class="nav-link">Qui suis-je ?</a></li>
+                        <li class="nav-item"><a href="#projets " class="nav-link">Mes Projets </a></li>
+                        <li class="nav-item"><a href="#competences" class="nav-link">Mes Compétences</a></li>
+                        <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+                    </ul>
+            </div>
+            </nav>
     </header>
     <main>
-        <section id="accueil">
-            <h1>Bienvenue sur mon portfolio!</h1>
-            <p>Je suis EWOMBA-JOCKTANE Yves Rodrigue, ingénieur en génie civil et développeur web et web mobile.</p>
+        <section class="section-presentation" id="accueil">
+            <div class="frame-photo-presentation">
+                <img class="photo-presentation" src="assets/img/photo_Ewomba_Event_summur2023.jpg" alt="Photo de profil EWOMBA-JOCKTANE" />
+            </div>
+            <div class="frame-presentation">
+                <h1>Bienvenue sur mon portfolio</h1>
+                <p class="fs-4 mb-5">Je suis passionné par le développement web et mobile, et je suis toujours à la recherche de nouveaux projets à réaliser.</p>
+                <div class="frame-identity my-3">
+                    <p>Yves Rodrigue</p>
+                    <p>EWOMBA-JOCKTANE</p>
+                    <p class="fs-4">Développeur Web et Web Mobile</p>
+                    <p class="fs-4">Ingénieur en génie civil</p>
+                    <p class="fs-4">1 an d'expériences</p>
+                    <a href="#contact"  
+                        class="btn btn-outline-primary mb-5"
+                    >Découvrir mes projets</a>
+                </div>
+            </div>
         </section>
         <section id="apropos">
             <h2>À propos de moi</h2>
@@ -31,10 +56,9 @@
         </section>
         <section id="competences">
             <h2>Mes Compétences</h2>
-            <p>Développeur Web et Web mobile</p>
             <div class="card-container">
                 <div class="card">
-                    <h2>En génie civil </h2>
+                    <h2>En développement d'applications web et web mobile</h2>
                     <ul>
                         <li><i class="fas fa-code"></i> Développement web</li>
                         <li><i class="fas fa-hard-hat"></i> Ingénierie en génie civil</li>
@@ -44,7 +68,7 @@
                     </ul>
                 </div>
                 <div class="card">
-                    <h2>En développement d'application web et web mobile</h2>
+                    <h2>En génie civil</h2>
                     <ul>
                         <li>Développement web</li>
                         <li>Ingénierie en génie civil</li>
@@ -91,5 +115,7 @@
     <footer>
         <p>&copy; 2024 EWOMBA-JOCKTANE Yves R. Tous droits réservés.</p>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
+    <script src="assets/js/script.js"></script>
 </body>
 </html>

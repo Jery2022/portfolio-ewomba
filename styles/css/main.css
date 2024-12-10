@@ -3,15 +3,6 @@ h1, h2 {
   color: #e43f5a;
 }
 
-body {
-  font: 19px/23px Arial, sans-serif;
-  color: #fff;
-  background-color: #1f4068; /* Couleur de fond blanc bleuâtre */ /* background-color: #1a1a2e */
-  display: grid;
-  grid-template-rows: auto 1fr auto;
-  min-height: 100vh;
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -19,12 +10,21 @@ body {
 }
 
 header {
-  background-color: #162447;
+  background-color: #f8f9fa;
   padding: 10px 0;
   position: fixed;
   width: 100%;
   top: 0;
   z-index: 1000;
+}
+
+body {
+  font: 19px/23px Arial, sans-serif;
+  color: #fff;
+  background-color: #1f4068; /* Couleur de fond blanc bleuâtre */ /* background-color: #1a1a2e */
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
 }
 
 nav ul {
@@ -87,6 +87,72 @@ form button:hover {
   background-color: #e43f5a;
 }
 
+footer {
+  text-align: center;
+  padding: 20px 0;
+  background-color: #162447;
+  color: #fff;
+}
+
+@media (max-width: 600px) {
+  main {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    padding-top: 60px;
+  }
+}
+/* photo_Ewomba_Event_summur2023 */
+.image-presentation {
+  position: absolute;
+  width: 613px;
+  height: 658px;
+  left: 710px;
+  top: 52px;
+  background: url(photo_Ewomba_Event_summur2023.jpg);
+  transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+
+.section-presentation {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  padding: 40px;
+}
+.section-presentation .frame-photo-presentation .photo-presentation {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+.section-presentation .frame-presentation {
+  text-align: center;
+  color: #fff;
+}
+.section-presentation .frame-presentation .frame-identity {
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid #e43f5a;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 120%;
+  align-items: center;
+  text-align: center;
+  letter-spacing: -0.02em;
+  color: rgba(0, 0, 0, 0.97);
+  flex: none;
+  order: 0;
+  flex-grow: 1;
+}
+.section-presentation .frame-presentation .frame-identity:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+
 #experiences {
   text-align: center;
   padding: 20px;
@@ -139,21 +205,4 @@ form button:hover {
   color: #fff;
   transform: translateX(10px);
   cursor: pointer;
-}
-
-footer {
-  text-align: center;
-  padding: 20px 0;
-  background-color: #162447;
-  color: #fff;
-}
-
-@media (max-width: 600px) {
-  main {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
-    padding: 20px;
-    padding-top: 60px;
-  }
 }/*# sourceMappingURL=main.css.map */
