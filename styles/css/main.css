@@ -153,8 +153,11 @@ footer {
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
 }
 
-#experiences {
-  text-align: center;
+.section-apropos,
+.section-mescompetences,
+.section-mesexperiences,
+.section-mesprojets,
+.section-contact {
   padding: 20px;
 }
 
@@ -164,45 +167,87 @@ footer {
   gap: 20px;
   padding: 20px;
 }
-
-.card {
+.card-container .card {
   background-color: #1f4068;
   padding: 20px;
-  border-radius: 8px;
+  border-radius: 10px;
+  background: lightcyan;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-
-.card:hover {
+.card-container .card:hover {
   transform: translateY(-10px);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
 }
-
-.card h2 {
+.card-container .card h2 {
   color: #e43f5a;
 }
-
-.card p {
+.card-container .card p {
   margin-top: 10px;
   line-height: 1.6;
+  text-align: justify;
 }
-
-.card ul {
+.card-container .card ul {
   list-style-type: none;
   padding: 0;
 }
-
-.card ul li {
+.card-container .card ul li {
   padding: 10px;
   margin: 10px 0;
   background-color: #e43f5a;
   border-radius: 4px;
+  text-align: left;
   transition: background-color 0.3s ease, transform 0.3s ease;
 }
-
-.card ul li:hover {
+.card-container .card ul li i {
+  margin-right: 15px;
+}
+.card-container .card ul li:hover {
   background-color: #e43f5a;
   color: #fff;
   transform: translateX(10px);
   cursor: pointer;
+}
+
+.card-container-projets {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+.card-container-projets .card-projet {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+  gap: 10px;
+  width: 100%;
+  background: #FFFFFF;
+  border: 1px solid #000000;
+  box-sizing: border-box;
+}
+.card-container-projets .card-projet .card-title {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 120%;
+  align-items: center;
+  text-align: center;
+  letter-spacing: -0.02em;
+  color: #000000;
+}
+.card-container-projets .card-projet .card-title .card-text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  text-align: justify;
+  line-height: 120%;
+  align-items: center;
+  letter-spacing: -0.02em;
+  color: #000000;
+}
+.card-container-projets .card-projet .card-title:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
 }/*# sourceMappingURL=main.css.map */
