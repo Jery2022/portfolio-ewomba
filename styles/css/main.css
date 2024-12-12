@@ -116,9 +116,9 @@ footer {
 
 .section-presentation {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 20px;
-  padding: 40px;
+  padding: 20px;
 }
 .section-presentation .frame-photo-presentation .photo-presentation {
   width: 100%;
@@ -151,6 +151,20 @@ footer {
 .section-presentation .frame-presentation .frame-identity:hover {
   transform: translateY(-10px);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+.section-presentation .frame-presentation .frame-identity .frame-profil {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-style: normal;
+  font-weight: 40;
+  font-size: 20px;
+  line-height: 120%;
+  align-items: center;
+  text-align: center;
+  gap: 1px;
+  padding: 5px;
+  letter-spacing: -0.02em;
 }
 
 .section-apropos,
