@@ -16,12 +16,19 @@
     .frame-photo-presentation {
         .photo-presentation {
             width: 100% ;
-            border-radius: 20px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            height:100% ;
+            border-radius: 10px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
             transform: matrix(-1, 0, 0, 1, 0, 0);
+            border: 1px solid #e43f5a;
+            &:hover {
+                transform: matrix(-1, 0, 0, 1, 0, 0) scale(1.05);
+            }
+            margin-bottom: 30px ;
           
         }
     }
+
     .frame-presentation {  
         text-align: center;
         color: $white;
@@ -76,11 +83,20 @@
 .section-mesexperiences,
 .section-mesprojets,
 .section-contact {
-  //  text-align: center;
     padding: 20px;
+    h1{
+        font-style: normal;
+        font-weight: 600;
+        font-size: 40px;
+        line-height: 120%;
+        align-items: center;
+        text-align: center;
+        letter-spacing: -0.02em;
+        color: #e43f5a;
+        margin-bottom: 20px;
+    }
 
 }
-
 
 .card-container-apropos {
     display: grid;
@@ -95,7 +111,6 @@
         flex-direction: column;
         align-items: center;
         padding: 10px;
-        gap: 10px;
         width: 100%;
         background: lightcyan;
         border: 1px solid rgb(173, 250, 250);
@@ -193,6 +208,116 @@
             
             }
         }
+    }
+}
+
+
+.texte { 
+    position: relative; 
+    z-index: 2; 
+}
+
+.titre {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 120%;
+    align-items: center;
+    text-align: center;
+    letter-spacing: -0.02em;
+    color: #e43f5a;
+}
+
+.texte-content {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 120%;
+    text-align: justify;
+    letter-spacing: -0.02em;
+    color: #000000;
+}
+
+.image-valeurs {
+    position: relative;
+    width: 100%;
+    height: 100%; 
+    background-image: url('/assets/img/illustration-groupe-animaux.jpeg'); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+    color: white; 
+    font-size: 20px;
+    font-weight: 600;
+    padding: 20px; 
+}
+
+.image-valeurs::before, 
+.image-principes::before, 
+.image-loisirs::before { 
+    content: ''; 
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 100%; 
+    background: inherit; 
+    filter: blur(1px); /* Applique le flou */ 
+    z-index: 1; 
+}
+
+.image-principes {
+    position: relative;
+    width: 100%;
+    height: 100%; 
+    background-image: url('/assets/img/image-perroquet-1.jpeg'); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+    color: white; 
+    font-size: 20px;
+    font-weight: 600;
+    padding: 20px; 
+}
+
+.image-loisirs {
+    position: relative;
+    width: 100%;
+    height: 100%; 
+    background-image: url('/assets/img/photo-cuisine.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+    color: white; 
+    font-size: 20px;
+    font-weight: 600;
+    padding: 20px; 
+}
+
+.card-icons {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    background: lightcyan;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    &:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+    }
+
+    img {
+        width: 50px;
+        height: 50px;
+    }
+
+    p {
+        margin-top: 10px;
+        line-height: 1.6;
+        text-align: justify;
     }
 }
 
