@@ -331,20 +331,21 @@ footer {
   padding: 20px;
 }
 
-.image-valeurs::before,
-.image-principes::before,
-.image-loisirs::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: inherit;
-  filter: blur(1px); /* Applique le flou */
-  z-index: 1;
+/*
+.image-valeurs::before, 
+.image-principes::before, 
+.image-loisirs::before { 
+    content: ''; 
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 100%; 
+    background: inherit; 
+    filter: blur(1px);  
+    z-index: 1; 
 }
-
+*/
 .image-principes {
   position: relative;
   width: 100%;
