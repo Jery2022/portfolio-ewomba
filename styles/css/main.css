@@ -321,7 +321,7 @@ footer {
   position: relative;
   width: 100%;
   height: 100%;
-  background-image: url("/assets/img/illustration-groupe-animaux.jpeg");
+  background-image: url("/assets/img/image-animaux.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -350,7 +350,7 @@ footer {
   position: relative;
   width: 100%;
   height: 100%;
-  background-image: url("/assets/img/image-perroquet-1.jpeg");
+  background-image: url("/assets/img/image-perroquet-1b.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -364,7 +364,7 @@ footer {
   position: relative;
   width: 100%;
   height: 100%;
-  background-image: url("/assets/img/photo-cuisine.jpg");
+  background-image: url("/assets/img/photo-cuisine-1.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
