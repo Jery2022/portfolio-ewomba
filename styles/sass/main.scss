@@ -204,12 +204,12 @@
     }
 }
 
-
+/*
 .texte { 
     position: relative; 
     z-index: 2; 
 }
-
+*/
 .titre {
     font-style: normal;
     font-weight: 600;
@@ -220,6 +220,7 @@
     letter-spacing: -0.02em;
     color: #e43f5a;
 }
+    
 
 .texte-content {
     font-style: normal;
@@ -233,7 +234,7 @@
 
 
 .image-valeurs {
-    position: relative;
+    //position: relative;
     width: 100%;
     height: 100%; 
     background-image: url('/assets/img/image-animaux.png'); 
@@ -241,8 +242,8 @@
     background-position: center; 
     background-repeat: no-repeat;
     color: white; 
-    font-size: 20px;
-    font-weight: 600;
+    //font-size: 20px;
+   // font-weight: 600;
     padding: 20px; 
 }
 
