@@ -319,6 +319,7 @@ footer {
 }
 
 .image-valeurs {
+  position: relative;
   width: 100%;
   height: 100%;
   background-image: url("/assets/img/image-animaux.png");
@@ -326,7 +327,10 @@ footer {
   background-position: center;
   background-repeat: no-repeat;
   color: white;
+  font-size: 20px;
+  font-weight: 600;
   padding: 20px;
+  z-index: 2;
 }
 
 /*
