@@ -204,12 +204,11 @@
     }
 }
 
-/*
 .texte { 
     position: relative; 
     z-index: 2; 
 }
-*/
+
 .titre {
     font-style: normal;
     font-weight: 600;
@@ -233,7 +232,7 @@
 }
 
 
-.image-valeurs {
+.image {
     position: relative;
     width: 100%;
     height: 100%; 
@@ -245,13 +244,11 @@
     font-size: 20px;
     font-weight: 600;
     padding: 20px; 
-    z-index: 2;
+    //z-index: 1;
 }
 
-/*
-.image-valeurs::before, 
-.image-principes::before, 
-.image-loisirs::before { 
+
+.image::before { 
     content: ''; 
     position: absolute; 
     top: 0; 
@@ -262,7 +259,6 @@
     filter: blur(1px);  
     z-index: 1; 
 }
-*/
 
 .image-principes {
     position: relative;
