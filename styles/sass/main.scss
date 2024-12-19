@@ -227,8 +227,8 @@
 
 .texte { 
     position: absolute;
-    top: 10px;
-    left: 10px;
+    top: 100px;
+    left: 20px;
    // transform: translate(-50%, -50%);
     z-index: 2; 
     font-size: 20px;
@@ -238,7 +238,7 @@
 
 }
 
-.img {
+.image {
     position: relative;
     width: 100%;
     height: 350px; 
@@ -246,7 +246,6 @@
     background-size: cover; 
     background-position: center; 
     background-repeat: no-repeat;
-    margin-bottom: 10px;
     z-index: 1;
 }
 
