@@ -227,9 +227,8 @@
 
 .texte { 
     position: absolute;
-    top: 100px;
+    top: 80px;
     left: 20px;
-   // transform: translate(-50%, -50%);
     z-index: 2; 
     font-size: 20px;
     font-weight: 600;
@@ -242,7 +241,6 @@
     position: relative;
     width: 100%;
     height: 350px; 
-   // background-image: url('/assets/img/image-animaux.png'); 
     background-size: cover; 
     background-position: center; 
     background-repeat: no-repeat;
@@ -261,7 +259,7 @@
     filter: blur(1px);  
     z-index: -1; 
 }
-    */
+
 
 .image-principes {
     position: relative;
@@ -290,6 +288,7 @@
     font-weight: 600;
     padding: 20px; 
 }
+        */
 
 .card-icons {
     display: flex;
