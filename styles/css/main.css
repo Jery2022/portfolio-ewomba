@@ -332,7 +332,6 @@ footer {
 }
 
 .image::before {
-  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -340,7 +339,6 @@ footer {
   height: 100%;
   background: inherit;
   filter: blur(1px);
-  z-index: 1;
 }
 
 .image-principes {
