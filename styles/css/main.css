@@ -314,9 +314,8 @@ footer {
 
 .texte {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  top: 10px;
+  left: 10px;
   z-index: 2;
   font-size: 20px;
   font-weight: 600;
@@ -332,6 +331,7 @@ footer {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  margin-bottom: 10px;
   z-index: 1;
 }
 
